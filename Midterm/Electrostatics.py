@@ -10,8 +10,8 @@ def dipolePotential(x,y,q,d):
     return Vxy
 def pointField(x,y,q,Xq,Yq):
     k=8.987*10**9#Nm^2/c^2
-    Ex(x,y) = (k*q*(x-Xq))/((x-Xq)**2+(y-Yq)**2)**(1/2.)
-    Ey(x,y) = (k*q*(y-Yq))/((x-Xq)**2+(y-Yq)**2)**(1/2.)
-    return Ex(x,y),Ey(x,y)
-"""Added the PointField Equation for the midterm that takes the arguments of position (Xq,Yq), charge q and the array (x,y) and returns electric fiekd components."""
+    Ex = (k*q*(x-Xq))/((x-Xq)**2+(y-Yq)**2)**(1/2.)
+    Ey = (k*q*(y-Yq))/((x-Xq)**2+(y-Yq)**2)**(1/2.)
+    return Ex,Ey
+"""Added the PointField Equation for the midterm that takes the arguments of """
 
