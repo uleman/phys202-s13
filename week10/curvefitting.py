@@ -1,5 +1,5 @@
 def LinearLeastSquaresFit(x,y):
-    """takes input arrays of x and y and returns slope and intercept with corre$
+    """takes input arrays of x and y and returns slope and intercept with corre$"""
     x_avg = (1/float(len(x)))*sum(x)
     x_sqr_avg = (1/float(len(x)))*sum(x**2)
     y_avg = (1/float(len(x)))*sum(y)
@@ -14,7 +14,7 @@ def LinearLeastSquaresFit(x,y):
 
 
 def WeightedLinearLeastSquaresFit(x,y,w):
-    """ takes input arrays of x,y, and w and returns slope,slope error,intercep$
+    """ takes input arrays of x,y, and w and returns slope,slope error,intercep$"""
     """remember w is 1/(u^2) where u is the uncertainty"""
     w_sum = sum(w)
     wy_sum = sum(w*y)
