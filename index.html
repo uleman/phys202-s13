@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IPython Dashboard</title>
+<link rel="stylesheet" href="/static/jquery/css/themes/base/jquery-ui.min.css?v=d1a93" type="text/css" />
+<link rel="stylesheet" href="/static/css/boilerplate.css?v=40aef" type="text/css" />
+<link rel="stylesheet" href="/static/css/fbm.css?v=18a5d" type="text/css" />
+<link rel="stylesheet" href="/static/css/page.css?v=4c306" type="text/css"/>
+
+<link rel="stylesheet" href="/static/css/projectdashboard.css?v=87030" type="text/css" />
+<link rel="stylesheet" href="/static/css/alternateuploadform.css?v=ed4c4" type="text/css" />
+
+
+
+</head>
+<body 
+data-project=/nfshome/uleman/phys202-s13
+data-base-project-url=/
+data-base-kernel-url=/
+data-read-only=False
+>
+<div id="header">
+<span id="ipython_notebook"><h1><a href=/ alt='dashboard'><img src='/static/ipynblogo.png?v=5892b' alt='IPython Notebook'/></a></h1></span>
+
+<span id="login_widget">
+
+</span>
+
+
+
+</div>
+<div id="site">
+
+<div id="main_app">
+<div id="tabs">
+<ul>
+<li><a href="#tab1">Notebooks</a></li>
+<li><a href="#tab2">Clusters</a></li>
+</ul>
+<div id="tab1">
+
+<div id="notebook_toolbar">
+<form id='alternate_upload' class='alternate_upload' >
+<span id="drag_info" style="position:absolute" >
+To import a notebook, drag the file onto the listing below or <strong>click here</strong>.
+</span>
+<input type="file" name="datafile" class="fileinput" multiple='multiple'>
+</form>
+<span id="notebook_buttons">
+<button id="refresh_notebook_list" title="Refresh notebook list">Refresh</button>
+<button id="new_notebook" title="Create new notebook">New Notebook</button>
+</span>
+</div>
+
+<div id="notebook_list">
+<div id="project_name"><h2>/nfshome/uleman/phys202-s13</h2></div>
+</div>
+</div>
+<div id="tab2">
+<div id="cluster_toolbar">
+<span id="cluster_list_info">IPython parallel computing clusters</span>
+<span id="cluster_buttons">
+<button id="refresh_cluster_list" title="Refresh cluster list">Refresh</button>
+</span>
+</div>
+<div id="cluster_list">
+<div id="cluster_header">
+<span>profile</span>
+<span>action</span>
+<span title="Enter the number of engines to start or empty for default"># of engines</span>
+<span>status</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<script src="/static/jquery/js/jquery-1.7.1.min.js?v=ddb84" type="text/javascript" charset="utf-8"></script>
+<script src="/static/jquery/js/jquery-ui.min.js?v=9fc86" type="text/javascript" charset="utf-8"></script>
+<script src="/static/js/namespace.js?v=9e4e0" type="text/javascript" charset="utf-8"></script>
+<script src="/static/js/page.js?v=d306b" type="text/javascript" charset="utf-8"></script>
+<script src="/static/js/loginwidget.js?v=a07e2" type="text/javascript" charset="utf-8"></script>
+
+<script src="/static/js/notebooklist.js?v=e7c05" type="text/javascript" charset="utf-8"></script>
+<script src="/static/js/clusterlist.js?v=da6d3" type="text/javascript" charset="utf-8"></script>
+<script src="/static/js/projectdashboardmain.js?v=e2f86" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
